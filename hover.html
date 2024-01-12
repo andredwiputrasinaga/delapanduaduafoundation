@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Elemen dengan kelas "hover-text" akan memiliki teks tersembunyi secara default */
+    .hover-text {
+      display: none;
+    }
+
+    /* Ketika elemen dengan kelas "hover-container" dihover, ganti display dan visibility dari elemen dengan kelas "hover-text" */
+    .hover-container:hover .hover-text {
+      display: block;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hover-container">
+  <p>Tempatkan kursor di atas saya</p>
+  <p class="hover-text">Ini adalah teks yang akan muncul saat dihover.</p>
+</div>
+
+</body>
+</html>

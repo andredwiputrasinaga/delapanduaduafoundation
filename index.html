@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="html1" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelapanDuaDua</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- My style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="badan">
+     <!-- Navbar Start  -->
+     <nav class="navbar1">
+        <div class="logooo">
+            <img src="img/logo822.png" width="80px" class="logoo">
+            <a href="#" class="navbar-logo">822<span>FOUNDATION</span></a>
+        </div>
+
+        <div class="navbar-nav1">
+                <a href="#Home">Home</a> 
+                <a href="news.html">News</a> 
+                <a href="galery.html">Galery</a> 
+                <a href="event.html">Events</a>
+                <a href="aboutus.html">About Us</a>
+                
+        </div>
+
+        <div class="navbar-extra">
+            <a class="donasi" href="donasi.html">DONASI</a>
+        </div>
+        <div>
+            <h1>.</h1>
+            <a href="#" id="Hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+        
+    </nav>
+    <!-- Navbar End -->
+    
+<!-- slide start -->
+<div class="container">
+
+    <div class="slide" style="background-image: url('img/slides1.jpg');">
+         <h3>SEX EDUCATION AT SCHOOL</h3> 
+    </div>
+
+    <div class="slide" style="background-image: url('img/slide1.jpg');"> 
+         <h3>GOTONG ROYONG</h3>
+    </div>
+   
+    <div class="slide" style="background-image: url('img/slide3.jpEg');"> 
+         <h3>CAMPING INTERNAL</h3>
+    </div>
+    
+    <div class="slide" style="background-image: url('img/slide4.jpg');">
+         <h3>WORLD AIDS DAY</h3>
+    </div>
+</div>
+
+<div class="tombol1">
+    <a href="#">SEX EDUCATION AT SCHOOL</a>
+    <a href="#">GOTONG ROYONG</a>
+    <a href="#">CAMPING INTERNAL</a>
+    <a href="#">WORLD AIDS DAY</a>
+    
+</div>
+
+
+    
+    <script>
+        activeslideimg()
+
+        function activeslideimg(activeSlide = 2) {
+            const slides = document.querySelectorAll(".slide");
+
+            slides[activeSlide].classList.add("active");
+
+            for (const slide of slides) {
+                slide.addEventListener("click", () => {
+                    clearActiveClasses();
+
+                    slide.classList.add("active");
+                });
+            }
+
+            function clearActiveClasses(){
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                })
+            }
+        }
+    </script>
+<!-- slide end -->
+
+<!-- footer start-->
+<footer class="footer">
+    <div>
+        <a>&copy; 2024 @822foundation </a>
+        <ul>
+            <li>
+                <a>Menu</a>
+            </li>
+        </ul>
+        
+        <ul>
+           <li>
+            <a href="#">Home</a> 
+            <a href="news.html">News</a> 
+            <a href="galery.html">Galery</a> 
+            <a href="event.html">Event</a>
+            <a href="aboutus.html">About Us</a>
+            </li> 
+        </ul>
+    </div> 
+</footer>
+<!-- footer end-->
+
+<!-- fetaher icons -->
+<script>
+    feather.replace();
+</script>
+
+<!-- My Java Script -->
+<script src="js/script.js"></script>
+</body>
+</html>
